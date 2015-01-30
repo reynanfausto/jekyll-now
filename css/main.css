@@ -96,7 +96,103 @@ a:focus {
 }
 
 /* ----------------------------------------------------------
-	
+	Navigation
+---------------------------------------------------------- */
+
+.navbar-default {
+    border-color: transparent;
+    background-color: #222;
+}
+
+.navbar-default .navbar-brand {
+    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    color: #{{ site.color.primary }};
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+    color: #{{ site.color.secondary }};
+}
+
+.navbar-default .navbar-collapse {
+    border-color: rgba(255,255,255,.02);
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #{{ site.color.primary }};
+    background-color: #{{ site.color.primary }};
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #{{ site.color.primary }};
+}
+
+.navbar-default .nav li a {
+    text-transform: uppercase;
+    font-family: ;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+    outline: 0;
+    color: #{{ site.color.primary }};
+}
+
+.navbar-default .navbar-nav>.active>a {
+    border-radius: 0;
+    color: #fff;
+    background-color: #{{ site.color.primary }};
+}
+
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: #{{ site.color.secondary }};
+}
+
+@media(min-width:768px) {
+    .navbar-default {
+        padding: 25px 0;
+        border: 0;
+        background-color: transparent;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-default .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-default .navbar-nav>.active>a {
+        border-radius: 3px;
+    }
+
+    .navbar-default.navbar-shrink {
+        padding: 10px 0;
+        background-color: #222;
+    }
+
+    .navbar-default.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+
+/* ----------------------------------------------------------
+	Header
 ---------------------------------------------------------- */
 
 header {
@@ -119,7 +215,7 @@ header .intro-text {
 
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: ;
     font-size: 22px;
     font-style: italic;
     line-height: 22px;
@@ -156,4 +252,137 @@ header .intro-text .intro-heading {
         font-weight: 700;
         line-height: 75px;
     }
+}
+
+/* ----------------------------------------------------------
+Footer2
+---------------------------------------------------------- */
+
+#footer {
+  position: relative;
+  background: url('../images/19.jpg') no-repeat center fixed;
+  text-align: center;
+  overflow: hidden;
+  -webkit-background-size: cover;
+  background-size: cover;
+  z-index: 5;
+}
+
+#footer:after {
+    content: "";
+    background: url('../images/01.png') repeat;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+#footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: table;
+  margin: 0 auto;
+}
+
+#footer ul li {
+  display: inline-block;
+  min-width: 50px;
+  min-height: 75px;
+  margin: 0 30px;
+  padding: 0 30px;
+  position: relative;
+}
+
+#footer ul li a i {
+	color: #fff;
+  font-size: 3em;
+}
+
+#footer ul li a:hover i {
+	color: #20C7FB;
+}
+
+@media only screen and (max-width: 630px) {
+  #footer ul li {
+    margin: 0 15px;
+    padding: 0 15px;
+  }
+
+  #footer ul li a i {
+    font-size: 2.3em;
+  }
+}
+
+/* ----------------------------------------------------------
+	
+---------------------------------------------------------- */
+
+/*  */
+
+.section {
+  position: relative;
+  padding: 100px 0;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.space10 {
+  margin-bottom: 10px;
+}
+
+.space15 {
+  margin-bottom: 15px;
+}
+
+.space20 {
+  margin-bottom: 20px;
+}
+
+.space25 {
+  margin-bottom: 25px;
+}
+
+.space30 {
+  margin-bottom: 30px;
+}
+
+.space35 {
+  margin-bottom: 35px;
+}
+
+.space40 {
+  margin-bottom: 40px;
+}
+
+.space50 {
+  margin-bottom: 50px;
+}
+
+.space60 {
+  margin-bottom: 60px;
+}
+
+.space70 {
+  margin-bottom: 70px;
+}
+
+.space80 {
+  margin-bottom: 80px;
+}
+
+.space90 {
+  margin-bottom: 90px;
+}
+
+.space100 {
+  margin-bottom: 100px;
+}
+
+.light {
+  color: #fff;
 }

@@ -1,0 +1,39 @@
+<section id="footer" class="section light">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="section-header space30">
+      <h2 class="text-center">Follow Me</h2>
+      <div class="space30"></div>
+    </div>
+    <ul>
+      <li class="facebook">
+        {% if site.footer-links.facebook %}
+        <a href="http://facebook.com/{{ site.footer-links.facebook }}">
+          <i class="fa fa-facebook"></i>
+        </a>
+        {% endif %}
+      </li>
+      <li class="twitter">
+        {% if site.footer-links.twitter %}
+        <a href="http://twitter.com/{{ site.footer-links.twitter }}">
+          <i class="fa fa-twitter"></i>
+        </a>
+        {% endif %}
+      </li>
+      <li class="pinterest">
+        {% if site.footer-links.pinterest %}
+        <a href="http://pinterest.com/{{ site.footer-links.pinterest }}">
+          <i class="fa fa-pinterest"></i>
+        </a>
+        {% endif %}
+      </li>
+      <li class="linkedin">
+        {% if site.footer-links.linkedin %}
+        <a href="">
+          <i class="fa fa-linkedin"></i>
+        </a>
+        {% endif %}
+      </li>
+    </ul>
+  </div>
+</section>
