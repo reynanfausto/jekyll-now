@@ -6,12 +6,11 @@
   {% include head.html %}
 
   <body id="page-top" class="index">
+    {% include preloader.html %}
+    {% include navigation.html %}
     {% include header.html %}
-
     {{ content }}
-
     {% include footer.html %}
-
     {% include js.html %}
     {% include analytics.html %}
   </body>
